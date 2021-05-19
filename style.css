@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Pacifico&family=Righteous&family=Roboto+Condensed&display=swap');
+
+*{ 
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior :smooth;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'lato';
+    line-height: 20px;
+    color:black;
+}
+
+a:hover {
+ color:orange; 
+} 
+
+.header-background{
+    min-height: 750px;
+    width: 100%;
+    background-image: url('Gradhat.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+} 
+
+.nav-link{
+ font-size: 16px;
+ margin: 15px;
+ color: black !important; 
+ font-family: "Roboto Condensed"; 
+} 
+
+.nav-link:hover{
+    color:orange!important;
+}
+
+.info{
+    height:400px;
+
+}
+#graf1{
+    height:500px;
+}
+#graf2{
+    height:500px;
+}
+#wrapper{
+    padding:30px;
+}
+p{
+      text-align: center;
+    padding: 60px;
+}
+#map {
+    width:350px;
+    height:400px;
+}
+main{
+    padding:10px;
+}
+h1{
+    padding-top:75px;
+    text-align:center;
+    font-family: 'Pacifico';
+    color:orange;
+}
+
+#bild{
+    width:500px;
+     height:400px;
+}
+@media only screen and (max-width: 1024px) {
+   
+    #bild{
+        width:350px;
+        height:400px;
+    }
+
+    
+  }
