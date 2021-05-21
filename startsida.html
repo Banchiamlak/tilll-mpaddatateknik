@@ -21,7 +21,7 @@ xhttp.onreadystatechange = function(){
     Plotly.newPlot('graf1', data, layout);
   }
 };
-xhttp.open("GET", "data1.php", true);
+xhttp.open("GET", "test2.php", true);
 xhttp.send();
 
 var xhttp = new XMLHttpRequest();
@@ -37,7 +37,7 @@ xhttp.onreadystatechange = function(){
         Plotly.newPlot('graf2', data, layout);
         }
     };
-xhttp.open("GET", "data2.php", true);
+xhttp.open("GET", "test1.php", true);
 xhttp.send();
 
 function myFunction() {
@@ -69,14 +69,17 @@ function myFunction() {
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-                      <li class="nav-item">
+                      <li class="nav-item ">
                         <a class="nav-link" href="#graf1">Antagna 2020</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#graf2">Prognos 2035</a>
                       </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#map">Karta</a>
+                      </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#omoss">Om oss</a>
+                        <a class="nav-link" href="#bild">Om oss</a>
                       </li>
                       
                           <button onclick="myFunction()"> Dark mode</button>
@@ -84,12 +87,27 @@ function myFunction() {
                     </ul>
                   </div>
                 </div>
-          </nav>
+             </nav>
+             <section class="site-banner">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-lg-8 offset-md-2 info">
+                     <h1 class="center-text">Funderar du på att studera vidare?</h1>
+                      <p>Då har du kommit rätt, denna sida är till för att underlätta din sökning.  
+                        Här hittar du prognos över framtidsutsikter på arbetsmarknad för olika utbildningsområden. 
+                        Nedan finner du även en karta över en sammanställning av universitetskolor och högskolor runt omkring landet.</p>
+                   </div>
+                 </div>
+               </div>
+             </section>
         </div>
      </div>
     </header>
 
-<div id="wrapper"></div>
+
+
+
+<div class="wrapper"></div>
 
 <main> 
 
@@ -97,39 +115,56 @@ function myFunction() {
               <div class="row">
                 <div id = "graf1"  class="col-sm-6"></div>
                 <div  class="info col-sm-6">
-                  <p> Målgrupperna till vår webbapplikation är personer som planerar att studera på universitet eller högskola. Vår webbsida ska hjälpa de att få en översikt över vilka universitet och högskolor som finns i Sverige, hur många sökare som har blivit antagna år 2020 och sedan en prognos över beräknade efterfrågan på arbetskrafts/utbildningar år 2035. All data som kommer användas är  från statistiska centralbyrån.</p>
+                 <h2 class="title1">Prognos över antalet antagna till högskolor</h2>
+                  <p>Denna prognos beskriver antalet antagna till högskolor och universitet under höstterminen år 2020. 
+                    Under dennna period sökte 142 000 personer utan tidigare högskolestudier till utbildningar vid universitet och högskolor. 
+                    Det var en ökning med 13 % jämfört med föregående höst när antalet var 126 000 personer. 
+                    Prognosen visar en sammanställning av antalet antagna för universitetskolor, högskolor, övr enskilda utbildningsanordnare samt konstnärliga högskolor år 2020. 
+                  Källan är tagen från statistiska centralbyrån.</p>
                 </div>
               </div>
             </div>
-
+           
 
             <div class="container">
               <div class="row">
                 <div class="info col-sm-6">
-                  <p> Målgrupperna till vår webbapplikation är personer som planerar att studera på universitet eller högskola. Vår webbsida ska hjälpa de att få en översikt över vilka universitet och högskolor som finns i Sverige, hur många sökare som har blivit antagna år 2020 och sedan en prognos över beräknade efterfrågan på arbetskrafts/utbildningar år 2035. All data som kommer användas är  från statistiska centralbyrån.</p>
+                  <h2 class="title2"> Beräknad efterfråga & tillgång på arbetskraft & utbildning år 2035 </h2>
+                  <p> Prognosen presenterar framtidsutsikterna för beräknad tillgång och efterfråga på arbetskraft med olika utbildningar. 
+                    Fram till år 2035 bedöms efterfrågan och tillgången på eftergymnasialutbildning beräknas öka kraftigt dock inte alltid inom de utbildningar där behovet bedöms bli som störst.
+                    De utbildningsdimensioner som beräknas vara störts brist fram till 2035 är flertal lärarkategorier samt sjukvården och äldreomsorgen.
+                    Inom utbildningsområdet lant- och skogsbruk samt djursjukvård beräknas efterfrågan och tillgången öka på personer med eftergymnasialutbildning.
+                    För utbildningsgrupper inom samhällsvetenskapliga områden riskerar däremot tillgången på sikt bli större än efterfrågan år 2035. 
+                    Prognosen visar att inom utbildningsområdet naturvetenskap, data samt matematik beräknas den totala tillgången på eftergymnasial utbildade utvecklas starkare än efterfrågan under prognosperioden.
+                  Källan är tagen från statistiska centralbyrån. </p>
                 </div>
                 <div id = "graf2"  class="col-sm-6"></div>
               </div>
             </div>
+            <div class="wrapper"></div>
 
             <div class="container">
               <div class="row">
-                <div id = "map"  class="col-sm-6"></div>
-                <div class="info col-sm-6">
-                  <p> Målgrupperna till vår webbapplikation är personer som planerar att studera på universitet eller högskola. Vår webbsida ska hjälpa de att få en översikt över vilka universitet och högskolor som finns i Sverige, hur många sökare som har blivit antagna år 2020 och sedan en prognos över beräknade efterfrågan på arbetskrafts/utbildningar år 2035. All data som kommer användas är  från statistiska centralbyrån.</p>
+                <div id = "map" class="col-sm-6"></div>
+                <div id="hej" class="info col-sm-6">
+                  <h2 class="title3"> Karta över universitet & högsskolor inom Sverige</h2>
+                  <p> Denna karta visar dig en översikt över 27 styckna universistetskolor och högskolor som finns runt omkring landet. 
+                      Genom att klicka på pilarna tas du till universitetskolornas hemisda för mer utförlig information. 
+                      Här kan du finna lärosätenas forskning, utbildning samt institution.
+                      Kartan inkluderar även konstnärliga högskolor samt övr.enskilda utbildningsanordnare. </p>
                 </div>
-                
               </div>
             </div>
-            <div id="wrapper"></div>
 
             <div class="container" >
               <div class="row">
-                <div class="col-sm-6">
-                  <h1 id="omoss"> Om oss </h1> 
-                  <p> is sdummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class=" info col-sm-6">
+                  <h1 class="title4" > Om oss </h1> 
+                  <p> Vi är två studenter under andra året som läser en civilingenjörsutbildning med inriktning industriell ekonomi med fokus inom datavetenskap.
+                    Vårt syfte med denna webbsida är att hjälpa dig som är intresserade över att börja studera vidare antingen på högskola eller universitet.
+                    Vår hopp & önskan är att denna webbsida kan underlätta sökningsområdet för dig som är intresserad över att läsa vidare.  
+                    Om ni har fundering, vänligen kontakta antingen banchiamlak05hotmail.com eller miak1900@student.miun.se. 
+                    </p>
                   </div>
                   <div class="col-sm-6">
                   <img id ="bild" src= "uni.jpg" >
@@ -138,7 +173,7 @@ function myFunction() {
             </div>
             </div>
         </main>
-        <div id="wrapper"></div>
+        <div class="wrapper"></div>
                   <div class="col-12">
                      <hr class="light">  
                       <h5 class="text-center ">&copy; Banchimiriam.com</h5>

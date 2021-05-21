@@ -18,6 +18,7 @@ body {
     color:black;
 }
 
+
 a:hover {
  color:orange; 
 } 
@@ -38,12 +39,15 @@ a:hover {
  font-family: "Roboto Condensed"; 
 } 
 
+
 .nav-link:hover{
     color:orange!important;
 }
 
+
 .info{
-    height:400px;
+    height:600px;
+
 
 }
 #graf1{
@@ -52,25 +56,21 @@ a:hover {
 #graf2{
     height:500px;
 }
-#wrapper{
+.wrapper{
     padding:30px;
 }
-p{
-      text-align: center;
-    padding: 60px;
-}
+
 #map {
     width:350px;
     height:400px;
+    margin: right 50x;
 }
 main{
     padding:10px;
 }
-h1{
-    padding-top:75px;
-    text-align:center;
-    font-family: 'Pacifico';
-    color:orange;
+
+p{
+    text-align: center;
 }
 
 #bild{
@@ -83,6 +83,56 @@ h1{
         width:350px;
         height:400px;
     }
-
-    
   }
+
+.site-banner{
+      color:whitesmoke;
+      font-family: "Robot";
+      text-align: center;
+      padding-top: 13%;
+      padding-right: 35%;
+      position: absolute;
+}
+
+
+   /* Section 2 */
+  
+.title1{
+
+    padding-top:75px;
+    margin-bottom:15px;
+    text-align:center;
+    font-family: 'Lato';
+    color:orange;
+  
+}
+
+.p{
+    text-align: center;
+    
+}
+
+.title2{
+
+    padding-top:20px;
+    margin-bottom:15px;
+    text-align:center;
+    font-family: 'Lato';
+    color:orange;
+   
+}
+
+.title3{
+
+    padding-bottom: 15px;
+    text-align:center;
+    font-family: 'Lato';
+    color:orange;
+}
+.title4{
+    padding-bottom:15px;
+    text-align:center;
+    font-family: 'Pacifico';
+    color:orange;
+}
+
